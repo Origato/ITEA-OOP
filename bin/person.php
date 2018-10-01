@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . "/src/Person.php";
+require_once __DIR__ . "/../src/Person.php";
 
 echo Person::getOldest() . \PHP_EOL;
 
@@ -17,3 +17,7 @@ echo $p2->getLastName() .\PHP_EOL;
 echo $p3->getAge(200) .\PHP_EOL;
 
 echo Person::getOldest() . \PHP_EOL;
+
+echo $p1;
+
+var_dump(json_encode($p1));
